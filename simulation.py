@@ -22,16 +22,19 @@ with open('first.txt','r') as f:
 guess_list = []
 record_ = dict()
 ana = dict()
-for guess in first_:
+for guess1 in first_:
 
-    for answer in wordlist:        
+    for answer in wordlist:   
         
+        guess = guess1
         while guess != answer:
             judge(guess,answer,record_,guess_list)
             first_=words_filter(record_,wordlist)
+            
+            
             guess = random.choice(first_)
             
-        judge(guess,answer,record_,guess_list)
+     #   judge(guess,answer,record_,guess_list)
                 
         ana.setdefault(guess,[])
         time = len(guess_list)
