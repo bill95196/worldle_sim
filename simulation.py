@@ -34,7 +34,7 @@ for guess1 in first_:
             
             guess = random.choice(first_)
             
-     #   judge(guess,answer,record_,guess_list)
+        judge(guess,answer,record_,guess_list)
                 
         ana.setdefault(guess,[])
         time = len(guess_list)
